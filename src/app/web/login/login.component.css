@@ -1,0 +1,14 @@
+
+.todo{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+input{
+    border-radius: 50px;
+}
+.car{
+    border-radius: 30px;
+    padding: 20px;
+    margin-top: 30px;
+}

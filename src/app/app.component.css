@@ -1,0 +1,16 @@
+
+.contenido{
+  display: flex;
+  justify-content: center;
+
+}
+.cod1, .cod2{
+  flex: 20%;
+  height: 100vh;
+}
+.cod2{
+  padding-top: 80px;
+}
+.imgs{
+  height: 100vh;
+}

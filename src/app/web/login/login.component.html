@@ -1,0 +1,30 @@
+
+<div class="todo">
+    <div class="form">
+        <div class="container mr">
+            <div class="car">
+                <h4 class="card-title">Acceso de Cuenta</h4>
+                <form class="formulario" (submit)="OnLogout()">
+                    <div>
+                        <div class="row s12 m4 l8">
+                            <div class="input-field">
+                                <input id="email" type="email" class="validate" name="email" [(ngModel)]="email" required>
+                                <label for="email">Email</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="row">
+                            <div class="input-field">
+                                <input id="password" type="password" class="validate" name="password" [(ngModel)]="password"
+                                    required>
+                                <label for="password">Password</label>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="submit" value="Enviar" class="btn btn-primary">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
