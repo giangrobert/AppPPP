@@ -1,0 +1,19 @@
+
+.servis{
+    margin-top: 2%;
+}
+.bi{
+    margin: 0 auto;
+}
+.adicional{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mas{
+    color: #007BFF;
+}
+.card:hover{
+    box-shadow: 0px 0px 5px rgb(109, 109, 109);
+
+}

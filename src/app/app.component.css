@@ -1,16 +1,18 @@
-
-.contenido{
-  display: flex;
-  justify-content: center;
-
+.navega{
+  padding: 1% 7% 1% 7%;
 }
-.cod1, .cod2{
-  flex: 20%;
-  height: 100vh;
+.usuario{
+  color: white;
 }
-.cod2{
-  padding-top: 80px;
+.usuario2{
+  color: white;
 }
-.imgs{
-  height: 100vh;
+.notificaiones, .datos{
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+}
+.noti, .dato{
+  border-radius: 100px;
+  font-size: 0.9em;
 }

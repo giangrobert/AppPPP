@@ -22,6 +22,7 @@ import { from } from 'rxjs';
 import { AdministradorComponent } from './web/administrador/administrador.component';
 
 import { ChartsModule } from 'ng2-charts';
+import { ServiciosComponent } from './web/servicios/servicios.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { ChartsModule } from 'ng2-charts';
     AppComponent,
     HomeComponent,
     LoginComponent,
-    AdministradorComponent
+    AdministradorComponent,
+    ServiciosComponent
   ],
   imports: [
     BrowserModule,
