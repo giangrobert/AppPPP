@@ -1,8 +1,21 @@
 
 .todo{
+    background-image: url(../../../assets/img/Fondo.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
     display: flex;
     justify-content: center;
+    align-items: center;
     text-align: center;
+    height: 100vh;
+
+}
+.logo{
+    padding: 40px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 2px 5px 10px rgba(109, 109, 109, 0.527);
+
 }
 input{
     border-radius: 50px;
@@ -11,4 +24,12 @@ input{
     border-radius: 30px;
     padding: 20px;
     margin-top: 30px;
+}
+.logoUsuario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iconnUsuario{
+    width: 150%;
 }

@@ -8,10 +8,10 @@ import { ServiciosComponent } from './web/servicios/servicios.component';
 
 
 const routes: Routes = [
-  {path: '', component: HomeComponent},
-  {path: 'login', component: LoginComponent},
+  {path: 'Home', component: HomeComponent, canActivate:[AuthGuard]},
+  {path: '', component: LoginComponent},
   {path: 'administrador', component:AdministradorComponent, canActivate:[AuthGuard]},
-  {path: 'Servicios', component: ServiciosComponent}
+  {path: 'Servicios', component: ServiciosComponent, canActivate:[AuthGuard]},
 ];
 
 @NgModule({
