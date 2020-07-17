@@ -24,6 +24,15 @@ import { AdministradorComponent } from './web/administrador/administrador.compon
 import { ChartsModule } from 'ng2-charts';
 import { ServiciosComponent } from './web/servicios/servicios.component';
 
+import { MatSliderModule } from '@angular/material/slider';
+import { SolicitarComponent } from './web/servicios/solicitar/solicitar.component';
+import { ProductosComponent } from './web/productos/productos.component';
+
+import { HttpClientModule } from '@angular/common/http';
+import { CatalogoComponent } from './catalogo/catalogo.component';
+import { CatalogoAddComponent } from './catalogo/catalogo-add/catalogo-add.component';
+import { CatalogoListComponent } from './catalogo/catalogo-list/catalogo-list.component';
+
 
 @NgModule({
   declarations: [
@@ -31,7 +40,12 @@ import { ServiciosComponent } from './web/servicios/servicios.component';
     HomeComponent,
     LoginComponent,
     AdministradorComponent,
-    ServiciosComponent
+    ServiciosComponent,
+    SolicitarComponent,
+    ProductosComponent,
+    CatalogoComponent,
+    CatalogoAddComponent,
+    CatalogoListComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +55,9 @@ import { ServiciosComponent } from './web/servicios/servicios.component';
     AngularFireAuthModule,
     BrowserAnimationsModule, // required animations module
     ToastrModule.forRoot(), // ToastrModule added
-    ChartsModule
+    ChartsModule,
+    MatSliderModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
