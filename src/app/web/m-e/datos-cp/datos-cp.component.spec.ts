@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SolicitarComponent } from './solicitar.component';
+import { DatosCpComponent } from './datos-cp.component';
 
-describe('SolicitarComponent', () => {
-  let component: SolicitarComponent;
-  let fixture: ComponentFixture<SolicitarComponent>;
+describe('DatosCpComponent', () => {
+  let component: DatosCpComponent;
+  let fixture: ComponentFixture<DatosCpComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SolicitarComponent ]
+      declarations: [ DatosCpComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SolicitarComponent);
+    fixture = TestBed.createComponent(DatosCpComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

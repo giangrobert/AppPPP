@@ -22,10 +22,8 @@ import { from } from 'rxjs';
 import { AdministradorComponent } from './web/administrador/administrador.component';
 
 import { ChartsModule } from 'ng2-charts';
-import { ServiciosComponent } from './web/servicios/servicios.component';
 
 import { MatSliderModule } from '@angular/material/slider';
-import { SolicitarComponent } from './web/servicios/solicitar/solicitar.component';
 import { ProductosComponent } from './web/productos/productos.component';
 
 import { HttpClientModule } from '@angular/common/http';
@@ -34,18 +32,41 @@ import { CatalogoAddComponent } from './catalogo/catalogo-add/catalogo-add.compo
 import { CatalogoListComponent } from './catalogo/catalogo-list/catalogo-list.component';
 
 
+import { DataTablesModule } from 'angular-datatables';
+import { MEComponent } from './web/m-e/m-e.component';
+import { PracticasComponent } from './web/m-e/practicas/practicas.component';
+import { HorasComponent } from './web/m-e/horas/horas.component';
+import { ResumenComponent } from './web/m-e/resumen/resumen.component';
+import { DetallesPPPComponent } from './web/m-e/practicas/detalles-ppp/detalles-ppp.component';
+import { DocComponent } from './web/m-e/practicas/doc/doc.component';
+import { NuevaPPPComponent } from './web/m-e/practicas/nueva-ppp/nueva-ppp.component';
+import { NewpComponent } from './web/m-e/practicas/nueva-ppp/newp/newp.component';
+import { DatosAlumComponent } from './web/m-e/datos-alum/datos-alum.component';
+import { DatosCpComponent } from './web/m-e/datos-cp/datos-cp.component';
+import { AlmacenCpComponent } from './web/m-e/datos-cp/almacen-cp/almacen-cp.component'
+
+
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     LoginComponent,
     AdministradorComponent,
-    ServiciosComponent,
-    SolicitarComponent,
     ProductosComponent,
     CatalogoComponent,
     CatalogoAddComponent,
-    CatalogoListComponent
+    CatalogoListComponent,
+    MEComponent,
+    PracticasComponent,
+    HorasComponent,
+    ResumenComponent,
+    DetallesPPPComponent,
+    DocComponent,
+    NuevaPPPComponent,
+    NewpComponent,
+    DatosAlumComponent,
+    DatosCpComponent,
+    AlmacenCpComponent
   ],
   imports: [
     BrowserModule,
@@ -57,7 +78,8 @@ import { CatalogoListComponent } from './catalogo/catalogo-list/catalogo-list.co
     ToastrModule.forRoot(), // ToastrModule added
     ChartsModule,
     MatSliderModule,
-    HttpClientModule
+    HttpClientModule,
+    DataTablesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

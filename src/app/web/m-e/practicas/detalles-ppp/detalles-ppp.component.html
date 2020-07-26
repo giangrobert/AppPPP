@@ -1,0 +1,122 @@
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="card mb-3">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="progress-circle over50 p100">
+                            <span>100%</span>
+                            <div class="left-half-clipper">
+                                <div class="first50-bar"></div>
+                                <div class="value-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 mt-4">
+                        <h5>Práctica: Xxxx</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card cardm text-white bg-primary mb-3">
+                <div class="card-header">Mis Solicitudes</div>
+                <div class="card-body">
+                    <p class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi exercitationem
+                        minus ipsam aperiam praesentium eum consequatu</p>
+                </div>
+            </div>
+            <div class="card cardm text-white bg-dark mb-3">
+                <div class="card-header">Mi Carta de Presentación</div>
+                <div class="card-body">
+                    <p class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi exercitationem
+                        minus ipsam aperiam praesentium eum consequatu</p>
+                </div>
+            </div>
+            <div class="card cardm text-white bg-dark mb-3">
+                <div class="card-header">Mi Carta de Aceptación</div>
+                <div class="card-body">
+                    <p class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi exercitationem
+                        minus ipsam aperiam praesentium eum consequatu</p>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="card-header">Horas Acumuladas</div>
+                <div class="card-body">
+                    <h4 class="card-title">13 hrs</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-8">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-person-fill" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                    </svg>
+                    <b>GERENTE: </b>Juan Quispe
+                </div>
+            </div>
+            <div class="card mb-3">
+                <app-doc></app-doc>
+                <app-doc></app-doc>
+                <app-doc></app-doc>
+                <app-doc></app-doc>
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <button class="btn btn-primary botonn m-3 p-2" data-toggle="modal" data-target="#exampleModal">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-capslock" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M7.27 1.047a1 1 0 0 1 1.46 0l6.345 6.77c.6.638.146 1.683-.73 1.683H11.5v1a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-1H1.654C.78 9.5.326 8.455.924 7.816L7.27 1.047zM14.346 8.5L8 1.731 1.654 8.5H4.5a1 1 0 0 1 1 1v1h5v-1a1 1 0 0 1 1-1h2.846zm-9.846 5a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-1zm6 0h-5v1h5v-1z" />
+                            </svg>
+                            Subir DOC
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Cargar Archivo</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="form-group">
+                                                <input type="file" class="file text-white p-2 botonn bg-primary col-sm-12">
+                                                <br>
+                                                <input type="submit" value="Enviar"
+                                                    class="btn btn-success botonn col-sm-12">
+                                            </div>
+                                            <button type="button" class="btn btn-secondary botonn col-sm-12"
+                                                data-dismiss="modal">Cancelar</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                    </div>
+                    <div class="col-sm-2">
+                        <button class="btn btn-secondary botonn p-2">
+                            Ayuda
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-question-circle"
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path
+                                    d="M5.25 6.033h1.32c0-.781.458-1.384 1.36-1.384.685 0 1.313.343 1.313 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.007.463h1.307v-.355c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.326 0-2.786.647-2.754 2.533zm1.562 5.516c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

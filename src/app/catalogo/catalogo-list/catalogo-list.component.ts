@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ToastrService } from 'ngx-toastr';
 import { Catalogo } from 'src/app/models/catalogo';
 import { CatalogoService } from 'src/app/service/catalogo.service';
+import { Subject } from 'rxjs';
 
 @Component({
   selector: 'app-catalogo-list',
@@ -12,9 +13,19 @@ export class CatalogoListComponent implements OnInit {
 
   catalogoList:Catalogo[];
 
+  dtOptions: DataTables.Settings = {};
+  dtTrigger: Subject<any> = new Subject();
+
   constructor(private catalogoService:CatalogoService, private tostr:ToastrService) { }
 
   ngOnInit(): void {
+    this.dtOptions = {
+      pagingType: 'full_numbers',
+      pageLength: 5,
+      processing: true,
+      retrieve: true
+    };
+
     this.catalogoService.getProductos().snapshotChanges().subscribe(item=>{
       this.catalogoList=[];
       item.forEach(element => {
@@ -22,7 +33,7 @@ export class CatalogoListComponent implements OnInit {
         x["$key"]=element.key;
         this.catalogoList.push(x as Catalogo);
       });
-      console.log(this.catalogoList)
+      this.dtTrigger.next();
     })
   }
   onDelete($key:string){
@@ -34,6 +45,11 @@ export class CatalogoListComponent implements OnInit {
 
   onEdit(producto:Catalogo){
     this.catalogoService.selectProducto=Object.assign({},producto);
+  }
+
+
+  ngOnDestroy(){
+    this.dtTrigger.unsubscribe();
   }
 
 }

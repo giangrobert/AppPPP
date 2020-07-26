@@ -1,0 +1,11 @@
+.card2{
+    border-style: none;
+    border-bottom: 1px dashed rgb(48, 48, 48);
+}
+.card, .search{
+    border-radius: 20px;
+}
+button{
+    text-align: center;
+    padding: 5px 30px 5px 30px;
+}

@@ -1,0 +1,7 @@
+.documents{
+    display: flex;
+}
+.text, .text1{
+    margin: 0;
+    padding: 0;
+}
