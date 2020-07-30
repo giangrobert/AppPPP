@@ -13,10 +13,9 @@ import {ErrorStateMatcher} from '@angular/material/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+
   public email:string;
   public password:string;
-
-
   constructor(public servicio:AuthService, public router:Router , public toastr:ToastrService) { }
 
   ngOnInit(): void {
@@ -25,7 +24,8 @@ export class LoginComponent implements OnInit {
   OnLogout(){
     this.servicio.LoginEmail(this.email, this.password).then((ress)=>{
       this.toastr.success('', 'Logeado correctamente!');
-      this.router.navigate(['/administrador']);
+      this.router.navigate(['/me']);
+
     }).catch((error)=>{
       this.toastr.error('',"Acceso Denegado");
        console.log(error);

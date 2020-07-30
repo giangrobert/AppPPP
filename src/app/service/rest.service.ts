@@ -7,15 +7,15 @@ import { map } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class RestService {
+
   constructor(private http: HttpClient) {}
+
+  getProducts(): Observable<any> {
+    return this.http.get('http://127.0.0.1:8000/api/heroes/');
+  }
 
   private extractData(res: Response) {
     let body = res;
     return body || { };
-  }
-
-  getProducts(): Observable<any> {
-    return this.http.get('http://jsonplaceholder.typicode.com/posts').pipe(
-      map(this.extractData));
   }
 }
