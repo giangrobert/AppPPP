@@ -7,7 +7,6 @@ import { CommonModule} from '@angular/common';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './web/home/home.component';
 import { LoginComponent } from './web/login/login.component';
 
 
@@ -19,17 +18,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
 
 import { from } from 'rxjs';
-import { AdministradorComponent } from './web/administrador/administrador.component';
 
 import { ChartsModule } from 'ng2-charts';
 
 import { MatSliderModule } from '@angular/material/slider';
-import { ProductosComponent } from './web/productos/productos.component';
 
 import { HttpClientModule } from '@angular/common/http';
-import { CatalogoComponent } from './catalogo/catalogo.component';
-import { CatalogoAddComponent } from './catalogo/catalogo-add/catalogo-add.component';
-import { CatalogoListComponent } from './catalogo/catalogo-list/catalogo-list.component';
 
 
 import { DataTablesModule } from 'angular-datatables';
@@ -43,19 +37,16 @@ import { NuevaPPPComponent } from './web/m-e/practicas/nueva-ppp/nueva-ppp.compo
 import { NewpComponent } from './web/m-e/practicas/nueva-ppp/newp/newp.component';
 import { DatosAlumComponent } from './web/m-e/datos-alum/datos-alum.component';
 import { DatosCpComponent } from './web/m-e/datos-cp/datos-cp.component';
-import { AlmacenCpComponent } from './web/m-e/datos-cp/almacen-cp/almacen-cp.component'
+import { AlmacenCpComponent } from './web/m-e/datos-cp/almacen-cp/almacen-cp.component';
+import { AddComponent } from './web/m-e/datos-alum/add/add.component';
+import { CpAddComponent } from './web/m-e/datos-cp/cp-add/cp-add.component';
+import { SolicitudGeneradaComponent } from './web/m-e/practicas/solicitud-generada/solicitud-generada.component'
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
     LoginComponent,
-    AdministradorComponent,
-    ProductosComponent,
-    CatalogoComponent,
-    CatalogoAddComponent,
-    CatalogoListComponent,
     MEComponent,
     PracticasComponent,
     HorasComponent,
@@ -66,7 +57,10 @@ import { AlmacenCpComponent } from './web/m-e/datos-cp/almacen-cp/almacen-cp.com
     NewpComponent,
     DatosAlumComponent,
     DatosCpComponent,
-    AlmacenCpComponent
+    AlmacenCpComponent,
+    AddComponent,
+    CpAddComponent,
+    SolicitudGeneradaComponent
   ],
   imports: [
     BrowserModule,

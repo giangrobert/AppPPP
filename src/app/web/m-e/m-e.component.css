@@ -3,3 +3,9 @@
     margin-top: 20px;
     border-radius: 20px;
 }
+.card2{
+    border-style: none;
+}
+.card, .search{
+    border-radius: 20px;
+}

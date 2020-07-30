@@ -8,11 +8,8 @@
         
       </a>
       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-        <a class="dropdown-item" href="#" routerLink="catalogo">Productos</a>
-        <a class="dropdown-item" href="#" routerLink="Servicios">Servicios</a>
-        <a class="dropdown-item" href="#" routerLink="me">Another action</a>
+        <a class="dropdown-item" href="#" routerLink="me">Home</a>
         <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#" routerLink="Home">Something else here</a>
       </div>
     </li>
   <a class="navbar-brand" href="#" routerLink="Home">Prácticas Pre Profesionales</a>
@@ -24,12 +21,24 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
     </ul>
-    <button type="button" class="datos my-2 my-lg-0">
-      <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-list-ul" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-      </svg>
-      <span class="badge badge-light dato">4</span>
-    </button>
+      <div class="dropdown">
+        <button class="dropbtn">
+          <a class="nav-link dropdown usuarioFoto2 lista" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="">
+          <button type="button" class="datos my-2 my-lg-0">
+
+            <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-list-ul" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+            </svg>
+            <span class="badge badge-light dato">4</span>
+          </button>
+        </a>
+        </button>
+        <div class="dropdown-content">
+          <app-practicas></app-practicas>
+        </div>
+      </div>
+    
     <button type="button" class="notificaiones my-2 my-lg-0">
       <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-envelope-fill" fill="currentColor"
         xmlns="http://www.w3.org/2000/svg">

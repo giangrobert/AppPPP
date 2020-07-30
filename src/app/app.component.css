@@ -4,6 +4,10 @@
 .usuario{
   color: white;
 }
+.lista{
+  width: 300px;
+  text-align: right;
+}
 .usuario2{
   border: 2px solid white;
   border-radius: 100%;

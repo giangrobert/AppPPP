@@ -16,7 +16,7 @@ import { tokenReference } from '@angular/compiler';
 export class AppComponent {
   title = 'appVentas';
   isLogin: boolean;
-  loginn: boolean;
+  Login: boolean;
   public email: string;
   public password: string;
 
@@ -27,8 +27,10 @@ export class AppComponent {
     this.authService.getAuth().subscribe(auth => {
       if (auth) {
         this.isLogin = true;
+        this.Login=false
       } else {
         this.isLogin = false;
+        this.Login = false;
       }
     })
   }
